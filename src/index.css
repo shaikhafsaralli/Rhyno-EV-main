@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.typing-animation {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 0.15em solid orange;
+    /* Cursor color */
+    animation: typing 3.5s steps(30, end) infinite, blink 0.75s step-end infinite;
+}
+
+
+/* src/pages/Home.css */
+
+.typing-animation {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 0.15em solid orange;
+    /* Cursor color */
+    animation: typing 3.5s steps(30, end) infinite, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: orange;
+    }
+}
+
+.bg-gray-800 {
+    background: rgba(31, 41, 55, 0.8);
+    /* Tailwind Gray-800 with opacity */
+}
+
+
+/* Add this to your CSS file */
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.animate-spin {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px #fff;
+    }
+    50% {
+        box-shadow: 0 0 20px #ff0, 0 0 30px #f00;
+    }
+    100% {
+        box-shadow: 0 0 5px #fff;
+    }
+}
+
+.animate-glow {
+    animation: glow 1.5s infinite alternate;
+}
+
+
+/* Global styles (e.g., in your tailwind.css or custom CSS) */
+
+@media (max-width: 450px) {
+    body {
+        overflow-x: hidden;
+    }
+    .container {
+        padding-left: 1rem;
+        /* Adjust padding as needed */
+        padding-right: 1rem;
+        /* Adjust padding as needed */
+    }
+    .text-sm {
+        font-size: 0.875rem;
+        /* Adjust font size for small screens */
+    }
+    .p-4 {
+        padding: 1rem;
+        /* Adjust padding for small screens */
+    }
+    .m-4 {
+        margin: 1rem;
+        /* Adjust margin for small screens */
+    }
+}
+
+
+/* Add this to your CSS file or within a <style> tag */
